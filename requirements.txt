@@ -1,8 +1,0 @@
-streamlit
-base64
-pandas 
-plotly
-PIL 
-mplsoccer
-matplotlib
-io
