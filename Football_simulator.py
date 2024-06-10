@@ -122,7 +122,9 @@ def main():
 
     # Load data if not loaded already
     if st.session_state.df is None:
-        st.session_state.df = pd.read_csv(r"C:\Users\Emmanuel.Agholor\Documents\football positions proj\final_data.csv")
+        url = 'https://download2324.mediafire.com/dmkeaq22psogunHL0SOCKW1i0uOGv8z1H14sKbRJyWzArHRx1VCXQ3TMnEdFG2dlc616EmV8VyCJ5GngSu_xoi4Oh__8Sccr11R4r_IYYRVpSCb6uxkn2L5GW6qUSgIEr97RSKwVw66LNmrv-RRK6s4SkKEGJ5xf00SJas6PnHXtzLkUXQ/gmyitobgkzqw46c/final_data.csv'
+        st.session_state.df = pd.read_csv(url) 
+        #st.session_state.df = pd.read_csv(r"C:\Users\Emmanuel.Agholor\Documents\football positions proj\final_data.csv")
         print(f'df is loaded {pd.Timestamp.now()}')
 
     # # Filtered data initialization
